@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>AlDAWA</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/aldawalogo (1).png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .border {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+      }
+      .btn-light.icon-hover-danger {
+        border-color: #dc4c64 !important;
+        background-color: white !important;
+      }
+
+      .btn-light.icon-hover-danger:hover {
+        color: #dc4c64 !important;
+      }
+      .card-img-top {
+
+        object-fit: cover; 
+        max-width: 100px; /* Adjust the image size as needed */
+        max-height: 100px;
+      }
+      
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top " style="background-color: #f8f9fa; height: 70px;">
+      <div class=" d-flex  align-items-center justify-content-between">
+        <div class=" d-flex align-items-center justify-content-center">
+          <a href="index.html" class="logo me-auto" style="margin: 10px;font-size: 20px;">
+            <svg width="65" height="65" viewBox="0 0 96 74"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_360_1118" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="0" width="65"
+                height="48">
+                <path d="M16 0H81V48H16V0Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_360_1118)">
+                <path
+                  d="M36.2549 0L45.5522 35H55L50.1433 16.7223C50.1398 16.7164 50.1382 16.7093 50.1388 16.7022L45.7027 0H36.2549Z"
+                  fill="url(#paint0_linear_360_1118)" />
+                <path d="M25.4081 0L34.7054 35H44.1532L39.3939 17.0831L34.8559 0H25.4081Z"
+                  fill="url(#paint1_linear_360_1118)" />
+                <path d="M16.0002 35H25.4436L27.1215 28.6897V28.6846L29.4104 20.0684L24.6865 2.29042L16.0002 35Z"
+                  fill="url(#paint2_linear_360_1118)" />
+                <g style="mix-blend-mode:screen" opacity="0.4">
+                  <path d="M37.4546 1.0294L53.8002 33.9706L45.0474 1.0294H37.4546Z" fill="white" />
+                </g>
+                <g style="mix-blend-mode:screen" opacity="0.4">
+                  <path d="M26.6078 1.0294L42.9534 33.9706L34.2006 1.0294H26.6078Z" fill="white" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path d="M24.6865 2.29042L27.1215 28.6871L29.4113 20.0684L24.6865 2.29042Z" fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M25.4081 0L34.7054 35H44.1532C42.5771 34.8919 41.0054 34.8456 39.4293 34.7632L37.0695 34.6809L34.9577 34.6237C34.2582 31.7774 33.5366 28.9364 32.7928 26.1007L31.6417 21.7257L30.464 17.3559C29.6627 14.4478 28.8525 11.5449 28.0157 8.64706C27.5907 7.20588 27.1746 5.75441 26.7363 4.31838C26.298 2.88235 25.8685 1.43037 25.4081 0Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M36.2549 0L45.5522 35H55C53.4239 34.8919 51.8522 34.8456 50.2761 34.7632L47.9163 34.6809L45.8045 34.6237C45.105 31.7774 44.3834 28.9364 43.6396 26.1007L42.4885 21.7257L41.3108 17.3559C40.5095 14.4478 39.6993 11.5449 38.8626 8.64706C38.4375 7.20588 38.0214 5.75441 37.5831 4.31838C37.1448 2.88235 36.7153 1.43037 36.2549 0Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M38.8402 0C39.9825 0.138456 41.1247 0.226471 42.2714 0.293382C42.8425 0.329412 43.4136 0.365441 43.9847 0.386029C44.4585 0.406618 44.9322 0.427205 45.4059 0.437499C45.552 1.03971 45.6981 1.63728 45.8486 2.23897L46.3932 4.33434C46.5703 5.02868 46.7695 5.72404 46.9555 6.4189C47.1414 7.11375 47.3362 7.8086 47.5354 8.49831C47.7347 9.18801 47.9295 9.88801 48.142 10.5726C48.3545 11.2571 48.5537 11.952 48.7706 12.6365C49.2001 14.0057 49.6472 15.3593 50.1387 16.7027L45.7025 0.000514423L38.8402 0Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M27.843 0C29.0118 0.138456 30.1806 0.226471 31.3494 0.293382C31.9338 0.333872 32.5182 0.364755 33.1026 0.386029C33.5896 0.406618 34.0722 0.427205 34.5592 0.442132L35.0152 2.28015L35.5686 4.42132L36.1442 6.55169C36.3345 7.26765 36.5338 7.97228 36.7374 8.67743C36.9411 9.38257 37.1403 10.0929 37.3572 10.798C37.5742 11.5032 37.7734 12.2088 37.9992 12.9037C38.4331 14.3088 38.8935 15.7037 39.3938 17.0831L34.8558 0H27.843Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M20.7241 34.7575C19.303 34.7014 17.8862 34.6546 16.4651 34.6191C16.806 33.4301 17.138 32.2411 17.4701 31.0471C17.8508 29.6933 18.2227 28.3344 18.5857 26.9701C19.3251 24.2529 20.0379 21.5199 20.7463 18.7919L21.7867 14.684L22.7961 10.5663C23.1237 9.19208 23.4558 7.81838 23.7612 6.43897C24.0756 5.05439 24.3988 3.67961 24.6865 2.29042L16.0002 35H25.4436C23.8719 34.8836 22.2958 34.8353 20.7241 34.7575Z"
+                    fill="black" />
+                </g>
+              </g>
+              <path
+                d="M4.75 56.7383H8.08008L12.0449 70H9.82812L8.61719 65.9473H4.33008L3.17773 70H0.902344L4.75 56.7383ZM8.1582 64.248L6.37109 57.7441L4.75977 64.248H8.1582ZM14.168 55.9473H16.1895V68.3594L16.7656 68.7695V70H16.209L16.1895 69.9805V70C15.5449 70 15.0469 69.8698 14.6953 69.6094C14.3438 69.349 14.168 68.9193 14.168 68.3203V55.9473ZM20.4414 63.3105H26.2227V65.0195H20.4414V63.3105ZM30.5234 56.748C30.8555 56.735 31.2233 56.7188 31.627 56.6992C31.9785 56.6862 32.3887 56.6732 32.8574 56.6602C33.3327 56.6471 33.8535 56.6406 34.4199 56.6406C35.4355 56.6406 36.334 56.7773 37.1152 57.0508C37.8965 57.3177 38.554 57.7246 39.0879 58.2715C39.6283 58.8184 40.0352 59.5052 40.3086 60.332C40.5885 61.1589 40.7285 62.1289 40.7285 63.2422C40.7285 64.3555 40.5788 65.3353 40.2793 66.1816C39.9798 67.0215 39.5501 67.7246 38.9902 68.291C38.4368 68.8574 37.763 69.2839 36.9688 69.5703C36.1745 69.8568 35.2793 70 34.2832 70H30.5234V56.748ZM34.6152 68.291C35.2207 68.291 35.7611 68.1641 36.2363 67.9102C36.7116 67.6497 37.1152 67.2949 37.4473 66.8457C37.7793 66.39 38.0332 65.8594 38.209 65.2539C38.3848 64.6419 38.4727 63.9844 38.4727 63.2812C38.4727 62.4674 38.3848 61.7546 38.209 61.1426C38.0332 60.5241 37.7793 60.0065 37.4473 59.5898C37.1152 59.1732 36.7116 58.8607 36.2363 58.6523C35.7611 58.444 35.2207 58.3398 34.6152 58.3398C34.2832 58.3398 33.9967 58.3431 33.7559 58.3496C33.515 58.3561 33.3197 58.3626 33.1699 58.3691C32.9941 58.3822 32.8477 58.3919 32.7305 58.3984V68.291H34.6152ZM42.8711 67.1484C42.8711 66.6081 42.9492 66.1491 43.1055 65.7715C43.2617 65.3939 43.4896 65.0846 43.7891 64.8438C44.0951 64.6029 44.4629 64.4238 44.8926 64.3066C45.3288 64.1829 45.8268 64.1048 46.3867 64.0723L48.5645 63.9551V63.1738C48.5645 62.8223 48.5319 62.5326 48.4668 62.3047C48.4082 62.0768 48.3073 61.8945 48.1641 61.7578C48.0208 61.6211 47.8288 61.5267 47.5879 61.4746C47.3535 61.416 47.0605 61.3867 46.709 61.3867C46.3574 61.3867 46.0221 61.4258 45.7031 61.5039C45.3906 61.582 45.1172 61.6667 44.8828 61.7578C44.6029 61.8685 44.3457 61.9922 44.1113 62.1289C43.9681 61.9271 43.8542 61.735 43.7695 61.5527C43.6849 61.3639 43.6198 61.1947 43.5742 61.0449C43.5156 60.8757 43.4766 60.7129 43.457 60.5566C43.7695 60.4004 44.1048 60.2637 44.4629 60.1465C44.7754 60.0423 45.1335 59.9479 45.5371 59.8633C45.9473 59.7786 46.377 59.7363 46.8262 59.7363C47.5684 59.7363 48.1836 59.8014 48.6719 59.9316C49.1602 60.0618 49.5475 60.2604 49.834 60.5273C50.127 60.7878 50.3288 61.1198 50.4395 61.5234C50.5566 61.9206 50.6152 62.3926 50.6152 62.9395V68.3887L51.4355 69.3848V70H49.6289L48.877 69.1309H48.5254C48.4928 69.1634 48.4049 69.2383 48.2617 69.3555C48.125 69.4661 47.946 69.5866 47.7246 69.7168C47.5098 69.8405 47.2624 69.9512 46.9824 70.0488C46.709 70.1465 46.416 70.1953 46.1035 70.1953C45.6152 70.1953 45.1725 70.1237 44.7754 69.9805C44.3783 69.8307 44.0365 69.6224 43.75 69.3555C43.4701 69.082 43.252 68.7598 43.0957 68.3887C42.946 68.0111 42.8711 67.5977 42.8711 67.1484ZM45 66.9727C45 67.2721 45.0423 67.5228 45.127 67.7246C45.2116 67.9199 45.3288 68.0762 45.4785 68.1934C45.6348 68.3105 45.8203 68.3919 46.0352 68.4375C46.2565 68.4831 46.5007 68.5059 46.7676 68.5059C47.015 68.5059 47.2461 68.4766 47.4609 68.418C47.6823 68.3529 47.8743 68.2812 48.0371 68.2031C48.2259 68.1185 48.4017 68.0176 48.5645 67.9004V65.2734L46.6016 65.4004C46.2956 65.4199 46.0384 65.472 45.8301 65.5566C45.6283 65.6413 45.4655 65.752 45.3418 65.8887C45.2181 66.0254 45.1302 66.1882 45.0781 66.377C45.026 66.5592 45 66.7578 45 66.9727ZM53.0996 60.0195H55.1992L57.0352 67.7246L57.2598 68.9746L57.4551 67.7344L59.1543 60.0195H61.8008L63.5879 67.7246L63.8223 68.9746L64.0371 67.7246L65.7754 60.0195H67.8066L65.2871 70H62.3086L60.707 62.8711L60.4434 61.4258L60.1992 62.8711L58.7441 70H55.707L53.0996 60.0195ZM69.6172 67.1484C69.6172 66.6081 69.6953 66.1491 69.8516 65.7715C70.0078 65.3939 70.2357 65.0846 70.5352 64.8438C70.8411 64.6029 71.209 64.4238 71.6387 64.3066C72.0749 64.1829 72.5729 64.1048 73.1328 64.0723L75.3105 63.9551V63.1738C75.3105 62.8223 75.278 62.5326 75.2129 62.3047C75.1543 62.0768 75.0534 61.8945 74.9102 61.7578C74.7669 61.6211 74.5749 61.5267 74.334 61.4746C74.0996 61.416 73.8066 61.3867 73.4551 61.3867C73.1035 61.3867 72.7682 61.4258 72.4492 61.5039C72.1367 61.582 71.8633 61.6667 71.6289 61.7578C71.349 61.8685 71.0918 61.9922 70.8574 62.1289C70.7142 61.9271 70.6003 61.735 70.5156 61.5527C70.431 61.3639 70.3659 61.1947 70.3203 61.0449C70.2617 60.8757 70.2227 60.7129 70.2031 60.5566C70.5156 60.4004 70.8509 60.2637 71.209 60.1465C71.5215 60.0423 71.8796 59.9479 72.2832 59.8633C72.6934 59.7786 73.123 59.7363 73.5723 59.7363C74.3145 59.7363 74.9297 59.8014 75.418 59.9316C75.9062 60.0618 76.2936 60.2604 76.5801 60.5273C76.873 60.7878 77.0749 61.1198 77.1855 61.5234C77.3027 61.9206 77.3613 62.3926 77.3613 62.9395V68.3887L78.1816 69.3848V70H76.375L75.623 69.1309H75.2715C75.2389 69.1634 75.151 69.2383 75.0078 69.3555C74.8711 69.4661 74.6921 69.5866 74.4707 69.7168C74.2559 69.8405 74.0085 69.9512 73.7285 70.0488C73.4551 70.1465 73.1621 70.1953 72.8496 70.1953C72.3613 70.1953 71.9186 70.1237 71.5215 69.9805C71.1243 69.8307 70.7826 69.6224 70.4961 69.3555C70.2161 69.082 69.998 68.7598 69.8418 68.3887C69.6921 68.0111 69.6172 67.5977 69.6172 67.1484ZM71.7461 66.9727C71.7461 67.2721 71.7884 67.5228 71.873 67.7246C71.9577 67.9199 72.0749 68.0762 72.2246 68.1934C72.3809 68.3105 72.5664 68.3919 72.7812 68.4375C73.0026 68.4831 73.2467 68.5059 73.5137 68.5059C73.7611 68.5059 73.9922 68.4766 74.207 68.418C74.4284 68.3529 74.6204 68.2812 74.7832 68.2031C74.972 68.1185 75.1478 68.0176 75.3105 67.9004V65.2734L73.3477 65.4004C73.0417 65.4199 72.7845 65.472 72.5762 65.5566C72.3743 65.6413 72.2116 65.752 72.0879 65.8887C71.9642 66.0254 71.8763 66.1882 71.8242 66.377C71.7721 66.5592 71.7461 66.7578 71.7461 66.9727Z"
+                fill="#0152A8" fill-opacity="0.85" />
+              <defs>
+                <linearGradient id="paint0_linear_360_1118" x1="45.6274" y1="0.385" x2="45.6274" y2="35.455"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00F3FF" />
+                  <stop offset="0.238" stop-color="#00EFFC" />
+                  <stop offset="0.44" stop-color="#00E5F4" />
+                  <stop offset="0.629" stop-color="#00D3E7" />
+                  <stop offset="0.81" stop-color="#00BAD4" />
+                  <stop offset="0.983" stop-color="#009BBC" />
+                  <stop offset="1" stop-color="#0098BA" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_360_1118" x1="34.7806" y1="0.385" x2="34.7806" y2="35.455"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00F3FF" />
+                  <stop offset="0.238" stop-color="#00EFFC" />
+                  <stop offset="0.44" stop-color="#00E5F4" />
+                  <stop offset="0.629" stop-color="#00D3E7" />
+                  <stop offset="0.81" stop-color="#00BAD4" />
+                  <stop offset="0.983" stop-color="#009BBC" />
+                  <stop offset="1" stop-color="#0098BA" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_360_1118" x1="19.5271" y1="35.4252" x2="34.7209" y2="27.6859"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3E6896" />
+                  <stop offset="0.247" stop-color="#355881" />
+                  <stop offset="0.75" stop-color="#1F324E" />
+                  <stop offset="1" stop-color="#131D32" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+  
+          <!-- <h3 class="logo me-auto" style="font-size: 16px; text-decoration: none;">Al-DAWA
+          </h3> -->
+        </div>
+        <nav id="navbar" class="navbar" id="secondary-navbar" class="navbar collapsed">
+          <ul class="ms-5">
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+  
+            <li><a class="nav-link   scrollto" href="#portfolio">Stores</a></li>
+            <li><a class="nav-link scrollto" href="#team">Blog</a></li>
+            <li class="dropdown"><a href="#"><span>Pharmacy
+                </span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Health Drinks</a></li>
+                <li class="dropdown"><a href="#"><span>Sports Nutrition</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Adult Nutrition</a></li>
+                    <li><a href="#">Kids Nutrition</a></li>
+                    <li><a href="#">Energy Drinks</a></li>
+                    <li><a href="#">Honey</a></li>
+                    <li><a href="#">Protein Powders & Drinks</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Minerals
+  
+                  </a></li>
+                <li><a href="#">Speciality Supplements</a></li>
+                <li><a href="#">Omega & Fish Oil</a></li>
+              </ul>
+            </li>
+            <li class="ml-auto"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+            <li>
+              <form class="navbar-form navbar-left">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="input-group" style="box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);">
+                      <input id="searchInput" type="text" class="form-control" placeholder="Search for..."
+                        style="width: 250px;">
+                      <span class="input-group-btn">
+                        <button id="myButton" type="button" class="btn btn-default" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn "><span class="bi bi-cart3" style="font-size: 18px;"></span></button>
+                    <button type="button" class="btn btn-light"><span class="bi bi-person-circle"
+                        style="font-size: 18px;"></span></button>
+                  </div>
+                </div>
+  
+  
+                <script src="script.js"></script>
+  
+                <!-- <a class="getstarted scrollto" href="#about">Get Started</a> -->
+              </form>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+      <!-- .navbar -->
+      <nav id="secondary-navbar" class="navbar">
+        <!-- Secondary navbar code -->
+        <!-- ... -->
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">AlDAWA Products</a></li>
+          <li><a class="nav-link scrollto" href="#about">Covid Essentials</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Women Care</a></li>
+          <li><a class="nav-link scrollto" href="#team">Ayurveda</a></li>
+          <li><a class="nav-link scrollto" href="#about">Insurance</a></li>
+          <li><a class="nav-link scrollto" href="#services">Lab tests</a></li>
+        </ul>
+      </nav>
+  
+  
+  
+      </div>
+    </header>
+
+    <!-- ======= Hero Section ======= -->
+    <!-- <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Better Solutions For Your Business</h1>
+          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div> -->
+    <script src="script.js"></script>
+<!-- 
+    <section class="page" style="margin-top: 20px;">
+        <div class="CartContainer" style="height: 60%;">
+            <div class="Header">
+                <h3 class="Heading">Product Details</h3>
+                <<h5 class="Action"><span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove all</h5> -->
+                <!-- <button class="button1" style="width: 150px;"><span class="bi bi-cart"
+                        style="margin-right: 5px;"></span>Add to cart</button>
+            </div>
+
+            <div class="Cart-Items">
+                <div class="image-box">
+                    <img src="assets/img/team/download (3).jpeg" style="max-height: 200px;" class="img-fluid" />
+                </div>
+                <div class="about">
+                    <h1 class="title">Amacin</h1>
+                    <h3 class="subtitle"><img src="assets/img/veg.png" style="height: 30px;" />10mg</h3>
+                    
+                    <p class="description">Amikacin is an antimicrobial with activity against more resistant gram-negative bacilli such as
+                        Acinetobacter baumanii and Pseudomonas aeruginosa. It also has excellent activity against most
+                        aerobic gram-negative bacilli from the Enterobacteriaceae family, including Nocard</p>
+                   
+                </div>
+                 <div class="counter">
+                    <div class="btn1">+</div>
+                    <div class="count">1</div>
+                    <div class="btn1">-</div>
+                </div> -->
+                <!-- <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Quantity</button>
+                    <ul class="dropdown-menu" style="width: 10px;">
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                    </ul>
+                  </div>
+                <div class="prices">
+                    <div class="amount">Rs 20.99</div>
+                    <div class="save"><u><span class="bi bi-save" style="margin-right: 5px;"></span>Save for later</u>
+                    </div>
+                    <div class="remove"><u><span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove</u>
+                    </div>
+                </div>
+            </div>  -->
+
+            <!-- <div class="Cart-Items pad">
+                <div class="image-box">
+                    <img src="assets/img/team/download (2).jpeg" style="height: 120px;" />
+                </div>
+                <div class="about">
+                    <h1 class="title">Anamalga</h1>
+                    <h3 class="subtitle">250mg</h3>
+                    <img src="assets/img/veg.png" style="height: 30px;" />
+                </div>
+                <div class="counter">
+                    <div class="btn1">+</div>
+                    <div class="count">1</div>
+                    <div class="btn1">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">Rs 300.19</div>
+                    <div class="save"><span class="bi bi-save" style="margin-right: 5px;"></span><u>Save for later</u>
+                    </div>
+                    <div class="remove"><u><span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove</u>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <hr>
+            <div class="checkout">
+                <button id="shoppingCart" class="button1">Proceed to checkout</button> -->
+                <!-- <div class="total">
+                    <div>
+                        <div class="Subtotal">Sub-Total</div>
+                        <div class="items">2 items</div>
+                    </div>
+                    <div class="total-amount">Rs 360.37</div>
+                </div> -->
+                
+            <!-- </div>
+        </div>
+    </section>
+    <script>document.getElementById("shoppingCart").addEventListener("click", function () {
+        window.location.href = "shoppingCart.html";
+      });</script> -->
+      <section class=" my-5"  >
+        <div class="container" style="margin-top: 100px;  ">
+          <div class="row">
+            <!-- cart -->
+            <div class="col-lg-9">
+              <div class="card border shadow-2">
+                <div class="m-4">
+                  <h4 class="card-title mb-4">Shopping Cart<span class="bi bi-cart"
+                    style="margin-left: 10px;"></h4>
+                  <div class="row gy-3 mb-4">
+                    <div class="col-lg-5">
+                      <div class="me-lg-5">
+                        <div class="d-flex">
+                          <img src="assets/img/crocin-650-advance-tablet.webp" class=" rounded me-3" style="width: 96px; height: 96px;" />
+                          <div class="">
+                            <h5><a href="#" class="nav-link bold">Crocin 650 Advance</a></h5>
+                            <p class="text-muted">strip of 10 tablets</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-6 d-flex flex-row flex-lg-column flex-xl-row text-nowrap">
+                      <div class="">
+                        <select style="width: 100px;" class="text-center me-4">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                      <div class="">
+                        <text class="h6" >&#8377;<strong>48.00</strong></text> <br />
+                        <small class="text-muted text-nowrap"> &#8377;24 / per item </small>
+                      </div>
+                    </div>
+                    <div class="col-lg col-sm-6 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center justify-content-xl-end mb-2">
+                      <div class="float-md-end">
+                        <a href="#!" class="btn btn-light border px-2 icon-hover-primary"><i class="fas fa-heart fa-lg px-1 text-secondary"><i class="bi bi-heart"></i></i></a>
+                        <a href="#" class="btn btn-light border text-danger icon-hover-danger"> <span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="row gy-3 mb-4">
+                    <div class="col-lg-5">
+                      <div class="me-lg-5">
+                        <div class="d-flex">
+                          <img src="assets/img/dolo-650-tablet.webp" class=" rounded me-3" style="width: 96px; height: 96px;" />
+                          <div class="">
+                            <h5><a href="#" class="nav-link">Dolo 650 </a></h5>
+                            <p class="text-muted">strip of 10 tablets</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-6 d-flex flex-row flex-lg-column flex-xl-row text-nowrap">
+                      <div class="">
+                        <select style="width: 100px;" class="text-center me-4">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                      <div class="">
+                        <text class="h6">&#8377;<strong>66.00</strong></text> <br />
+                        <small class="text-muted text-nowrap"> &#8377;33 / per item </small>
+                      </div>
+                    </div>
+                    <div class="col-lg col-sm-6 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center justify-content-xl-end mb-2">
+                      <div class="float-md-end">
+                        <a href="#!" class="btn btn-light border px-2 icon-hover-primary"><i class="fas fa-heart fa-lg px-1 text-secondary"><i class="bi bi-heart"></i></i></a>
+                        <a href="#" class="btn btn-light border text-danger icon-hover-danger"><span class="bi bi-trash-fill" style="margin-right: 5px;"></span> Remove</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="row gy-3">
+                    <div class="col-lg-5">
+                      <div class="me-lg-5">
+                        <div class="d-flex">
+                          <img src="assets/img/db676bfe52a54e85aec5733355fa7959.webp" class=" rounded me-3" style="width: 96px; height: 96px;" />
+                          <div class="">
+                            <h5><a href="#" class="nav-link">Saridon</a></h5>
+                            <p class="text-muted">strip of 10 tablets</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-6 d-flex flex-row flex-lg-column flex-xl-row text-nowrap">
+                      <div class="">
+                        <select style="width: 100px;" class="text-center me-4">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                      <div class="">
+                        <text class="h6">&#8377;<strong>56.00</strong> </text> <br />
+                        <small class="text-muted text-nowrap"> &#8377;18 / per item </small>
+                      </div>
+                    </div>
+                    <div class="col-lg col-sm-6 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center justify-content-xl-end mb-2">
+                      <div class="float-md-end">
+                        <a href="#!" class="btn btn-light border px-2 icon-hover-primary"><i class="fas fa-heart fa-lg px-1 text-secondary"><i class="bi bi-heart"></i></i></a>
+                        <a href="#" class="btn btn-light border text-danger icon-hover-danger" > <span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="border-top pt-4 mx-4 mb-4">
+                  <p><i class="fas fa-truck text-muted fa-lg"></i> Free Delivery within 1-2 weeks</p>
+                  <p class="text-muted">
+                    Minimum order quantity: 2 strips
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- cart -->
+            <!-- summary -->
+            <div class="col-lg-3">
+              <div class="card mb-3 border shadow-2">
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <label class="form-label mb-2 " style="margin-bottom: 10px;" ><span><img src="assets/img/cvtnx1zh5we6atn3m7i0.svg" style="height: 20px;width: 20px;margin-right: 10px;"></span>Have coupon?</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control border" name="" placeholder="Coupon code" style="width: 60%;" />
+                        <button class="btn btn-light border" style="margin-top: 2px;">Apply</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="card shadow-2 border">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="mb-2">Total price:</p>
+                    <p class="mb-2">&#8377;170.00</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p class="mb-2">Discount:</p>
+                    <p class="mb-2  "style="color: green;">-&#8377;40</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p class="mb-2">TAX:</p>
+                    <p class="mb-2">&#8377;30</p>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-between">
+                    <p class="mb-2"> price:</p>
+                    <p class="mb-2 fw-bold" style="margin-left: 140px;">&#8377;160.00</p>
+                  </div>
+      
+                  <div class="mt-3">
+                    <button type="button" id="login" style="border: none;width: 100%;"><a href="#" class="btn btn-success w-100 shadow-2 mb-2"> Continue </a></button>
+                    <a href="index.html" class="btn btn-light w-100 border mt-2"> Back to shop </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- summary -->
+          </div>
+        </div>
+      </section>
+      <!-- cart + summary -->
+      <section>
+        <div class="container my-5">
+          <header class="mb-4">
+            <h3>Recommended items</h3>
+          </header>
+      
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card px-4 border shadow-0 mb-4 mb-lg-0">
+                <div class="mask px-2" style="height: 50px;">
+                  <div class="d-flex justify-content-between">
+                    <h6><span class="badge bg-danger pt-1 mt-3 ms-2">New</span></h6>
+                    <a href="#"><i class="fas fa-heart text-primary fa-lg float-end pt-3 m-2"></i></a>
+                  </div>
+                </div>
+                <a href="#" class="">
+                  <img src="assets/img/crocin-baby-drop-peppermint.webp" class="card-img-top rounded-2 img-fluid" />
+                </a>
+                <div class="card-body d-flex flex-column pt-3 border-top">
+                  <a href="#" class="nav-link">Crocin Baby Drop</a>
+                  <div class="price-wrap mb-2">
+                    <strong class="">&#8377;135.00</strong>
+                    <del class="del">&#8377;170.00</del>
+                  </div>
+                  <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+                    <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card px-4 border shadow-0 mb-4 mb-lg-0">
+                <div class="mask px-2" style="height: 50px;">
+                  <a href="#"><i class="fas fa-heart text-primary fa-lg float-end pt-3 m-2"></i></a>
+                </div>
+                <a href="#" class="">
+                  <img src="assets/img/crocin-advance-500mg-tablet.webp" class="card-img-top rounded-2 img-fluid" />
+                </a>
+                <div class="card-body d-flex flex-column pt-3 border-top">
+                  <a href="#" class="nav-link">Crocin Advance 500mg </a>
+                  <div class="price-wrap mb-2">
+                    <strong class="">&#8377;70.00</strong>
+                  </div>
+                  <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+                    <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card px-4 border shadow-0">
+                <div class="mask px-2" style="height: 50px;">
+                  <a href="#"><i class="fas fa-heart text-primary fa-lg float-end pt-3 m-2"></i></a>
+                </div>
+                <a href="#" class="">
+                  <img src="assets/img/dolo-250-oral-suspension.webp" class="card-img-top rounded-2 img-fluid" />
+                </a>
+                <div class="card-body d-flex flex-column pt-3 border-top">
+                  <a href="#" class="nav-link">Dolo Oral Suspension</a>
+                  <div class="price-wrap mb-2">
+                    <strong class="">&#8377;40.00</strong>
+                  </div>
+                  <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+                    <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card px-4 border shadow-0">
+                <div class="mask px-2" style="height: 50px;">
+                  <a href="#"><i class="fas fa-heart text-primary fa-lg float-end pt-3 m-2"></i></a>
+                </div>
+                <a href="#" class="">
+                  <img src="assets/img/vicks-inhaler.webp" class="card-img-top rounded-2 img-fluid" />
+                </a>
+                <div class="card-body d-flex flex-column pt-3 border-top">
+                  <a href="#" class="nav-link">Vicks Inhaler </a>
+                  <div class="price-wrap mb-2">
+                    <strong class="">&#8377;10.00</strong>
+                  </div>
+                  <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+                    <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>document.getElementById("login").addEventListener("click", function () {
+        window.location.href = "login.html";
+      });</script> 
+
+    <main id="main">
+    <!-- <section >
+        <div class="CartContainer" style="height: 100%;">
+            <div class="Header">
+                <h3 class="Heading">Shopping Cart</h3>
+                <h5 class="Action"><span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove all</h5>
+                <!- <button class="button1" style="width: 150px;"><span class="bi bi-cart"
+                        style="margin-right: 5px;"></span>Add to cart</button> -->
+            <!-- </div>
+
+            <div class="Cart-Items">
+                <div class="image-box">
+                    <img src="assets/img/team/download (3).jpeg" style="height: 120px;" />
+                </div>
+                <div class="about">
+                    <h1 class="title">Amacin</h1>
+                    <h3 class="subtitle">10mg</h3>
+                    <img src="assets/img/veg.png" style="height: 30px;" />
+                </div>
+                <div class="counter">
+                    <div class="btn1">+</div>
+                    <div class="count">1</div>
+                    <div class="btn1">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">Rs 20.99</div>
+                    <div class="save"><u><span class="bi bi-save" style="margin-right: 5px;"></span>Save for later</u>
+                    </div>
+                    <div class="remove"><u><span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove</u>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Cart-Items pad">
+                <div class="image-box">
+                    <img src="assets/img/team/download (2).jpeg" style="height: 120px;" />
+                </div>
+                <div class="about">
+                    <h1 class="title">Anamalga</h1>
+                    <h3 class="subtitle">250mg</h3>
+                    <img src="assets/img/veg.png" style="height: 30px;" />
+                </div>
+                <div class="counter">
+                    <div class="btn1">+</div>
+                    <div class="count">2</div>
+                    <div class="btn1">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">Rs 300.19</div>
+                    <div class="save"><span class="bi bi-save" style="margin-right: 5px;"></span><u>Save for later</u>
+                    </div>
+                    <div class="remove"><u><span class="bi bi-trash-fill" style="margin-right: 5px;"></span>Remove</u>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="checkout" style="margin-bottom: 50px;">
+                <div class="total" >
+                    <div>
+                        <div class="Subtotal">Sub-Total</div>
+                        <div class="items">2 items</div>
+                    </div>
+                    <div class="total-amount">Rs 321.18</div>
+                </div>
+                <button id="login" class="button1" >Checkout</button>
+            </div>
+        </div>
+    </section> --> 
+  
+
+        <!-- ======= Clients Section ======= -->
+        <!-- <section id="clients" class="clients section-bg">
+            <div class="container">
+                <h4>TOP DEALS ON FEATURE BRANDS
+                    Select any of the brands below to see its products on offer</h4>
+
+                <div class="row" data-aos="zoom-in">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/download.jpeg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/download2.jpeg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section style="margin-top: 50px;">
+            <div class="scroll-container" style="margin-top: 20px;">
+                <div class="row">
+
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/KOFLET-SF.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/Liv52_-_2000x2000_c4ec53b4-0db1-40bd-9262-60a97c5a21d2.webp"
+                            class="img-fluid" alt="">
+                            <h4 class="medicine-name">KOFLET-SF</h4>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/purehands-orange-100ml-front.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex  flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/OPHTHACARE-DROPS-10ML.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/medicines-offers.jpeg" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/Septillin-Tablets.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/Septillin-Tablets.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/Liv52_-_2000x2000_c4ec53b4-0db1-40bd-9262-60a97c5a21d2.webp"
+                            class="img-fluid" alt="">
+                            <h4 class="medicine-name">KOFLET-SF</h4>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="arrow-button left-button">&lt;</button>
+            <button class="arrow-button right-button">&gt;</button>
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const leftButton = document.querySelector(".left-button");
+                const rightButton = document.querySelector(".right-button");
+                const scrollContainer = document.querySelector(".scroll-container");
+
+                leftButton.addEventListener("click", () => {
+                    scrollContainer.scrollBy({
+                        left: -200,
+                        behavior: "smooth",
+                    });
+                });
+
+                rightButton.addEventListener("click", () => {
+                    scrollContainer.scrollBy({
+                        left: 200,
+                        behavior: "smooth",
+                    });
+                });
+            });
+        </script> -->
+
+        <!-- ======= About Us Section ======= -->
+        <!-- <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn1-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><! End About Us Section -->
+
+        <!-- ======= Why Us Section ======= -->
+        <!-- <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section>End Why Us Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <!-- <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Photoshop <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section> End Skills Section -->
+
+        <!-- ======= Services Section ======= -->
+        <!-- <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspici</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> < End Services Section -->
+
+        <!-- ======= Cta Section ======= -->
+        <!-- <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!- End Cta Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <!-- <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!- End Portfolio Section -->
+
+        <!-- ======= Team Section ======= -->
+        <!-- <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Team Section  -->
+
+        <!-- ======= Pricing Section ======= -->
+        <!-- <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Pricing Section -->
+
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <!-- <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>End Frequently Asked Questions Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <!-- <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p> 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>91+ .......</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3><svg width="91" height="71" viewBox="0 0 96 74"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_360_1118" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="0" width="65"
+                  height="48">
+                  <path d="M16 0H81V48H16V0Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_360_1118)">
+                  <path
+                    d="M36.2549 0L45.5522 35H55L50.1433 16.7223C50.1398 16.7164 50.1382 16.7093 50.1388 16.7022L45.7027 0H36.2549Z"
+                    fill="url(#paint0_linear_360_1118)" />
+                  <path d="M25.4081 0L34.7054 35H44.1532L39.3939 17.0831L34.8559 0H25.4081Z"
+                    fill="url(#paint1_linear_360_1118)" />
+                  <path d="M16.0002 35H25.4436L27.1215 28.6897V28.6846L29.4104 20.0684L24.6865 2.29042L16.0002 35Z"
+                    fill="url(#paint2_linear_360_1118)" />
+                  <g style="mix-blend-mode:screen" opacity="0.4">
+                    <path d="M37.4546 1.0294L53.8002 33.9706L45.0474 1.0294H37.4546Z" fill="white" />
+                  </g>
+                  <g style="mix-blend-mode:screen" opacity="0.4">
+                    <path d="M26.6078 1.0294L42.9534 33.9706L34.2006 1.0294H26.6078Z" fill="white" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path d="M24.6865 2.29042L27.1215 28.6871L29.4113 20.0684L24.6865 2.29042Z" fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M25.4081 0L34.7054 35H44.1532C42.5771 34.8919 41.0054 34.8456 39.4293 34.7632L37.0695 34.6809L34.9577 34.6237C34.2582 31.7774 33.5366 28.9364 32.7928 26.1007L31.6417 21.7257L30.464 17.3559C29.6627 14.4478 28.8525 11.5449 28.0157 8.64706C27.5907 7.20588 27.1746 5.75441 26.7363 4.31838C26.298 2.88235 25.8685 1.43037 25.4081 0Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M36.2549 0L45.5522 35H55C53.4239 34.8919 51.8522 34.8456 50.2761 34.7632L47.9163 34.6809L45.8045 34.6237C45.105 31.7774 44.3834 28.9364 43.6396 26.1007L42.4885 21.7257L41.3108 17.3559C40.5095 14.4478 39.6993 11.5449 38.8626 8.64706C38.4375 7.20588 38.0214 5.75441 37.5831 4.31838C37.1448 2.88235 36.7153 1.43037 36.2549 0Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M38.8402 0C39.9825 0.138456 41.1247 0.226471 42.2714 0.293382C42.8425 0.329412 43.4136 0.365441 43.9847 0.386029C44.4585 0.406618 44.9322 0.427205 45.4059 0.437499C45.552 1.03971 45.6981 1.63728 45.8486 2.23897L46.3932 4.33434C46.5703 5.02868 46.7695 5.72404 46.9555 6.4189C47.1414 7.11375 47.3362 7.8086 47.5354 8.49831C47.7347 9.18801 47.9295 9.88801 48.142 10.5726C48.3545 11.2571 48.5537 11.952 48.7706 12.6365C49.2001 14.0057 49.6472 15.3593 50.1387 16.7027L45.7025 0.000514423L38.8402 0Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M27.843 0C29.0118 0.138456 30.1806 0.226471 31.3494 0.293382C31.9338 0.333872 32.5182 0.364755 33.1026 0.386029C33.5896 0.406618 34.0722 0.427205 34.5592 0.442132L35.0152 2.28015L35.5686 4.42132L36.1442 6.55169C36.3345 7.26765 36.5338 7.97228 36.7374 8.67743C36.9411 9.38257 37.1403 10.0929 37.3572 10.798C37.5742 11.5032 37.7734 12.2088 37.9992 12.9037C38.4331 14.3088 38.8935 15.7037 39.3938 17.0831L34.8558 0H27.843Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M20.7241 34.7575C19.303 34.7014 17.8862 34.6546 16.4651 34.6191C16.806 33.4301 17.138 32.2411 17.4701 31.0471C17.8508 29.6933 18.2227 28.3344 18.5857 26.9701C19.3251 24.2529 20.0379 21.5199 20.7463 18.7919L21.7867 14.684L22.7961 10.5663C23.1237 9.19208 23.4558 7.81838 23.7612 6.43897C24.0756 5.05439 24.3988 3.67961 24.6865 2.29042L16.0002 35H25.4436C23.8719 34.8836 22.2958 34.8353 20.7241 34.7575Z"
+                      fill="black" />
+                  </g>
+                </g>
+                <path
+                  d="M4.75 56.7383H8.08008L12.0449 70H9.82812L8.61719 65.9473H4.33008L3.17773 70H0.902344L4.75 56.7383ZM8.1582 64.248L6.37109 57.7441L4.75977 64.248H8.1582ZM14.168 55.9473H16.1895V68.3594L16.7656 68.7695V70H16.209L16.1895 69.9805V70C15.5449 70 15.0469 69.8698 14.6953 69.6094C14.3438 69.349 14.168 68.9193 14.168 68.3203V55.9473ZM20.4414 63.3105H26.2227V65.0195H20.4414V63.3105ZM30.5234 56.748C30.8555 56.735 31.2233 56.7188 31.627 56.6992C31.9785 56.6862 32.3887 56.6732 32.8574 56.6602C33.3327 56.6471 33.8535 56.6406 34.4199 56.6406C35.4355 56.6406 36.334 56.7773 37.1152 57.0508C37.8965 57.3177 38.554 57.7246 39.0879 58.2715C39.6283 58.8184 40.0352 59.5052 40.3086 60.332C40.5885 61.1589 40.7285 62.1289 40.7285 63.2422C40.7285 64.3555 40.5788 65.3353 40.2793 66.1816C39.9798 67.0215 39.5501 67.7246 38.9902 68.291C38.4368 68.8574 37.763 69.2839 36.9688 69.5703C36.1745 69.8568 35.2793 70 34.2832 70H30.5234V56.748ZM34.6152 68.291C35.2207 68.291 35.7611 68.1641 36.2363 67.9102C36.7116 67.6497 37.1152 67.2949 37.4473 66.8457C37.7793 66.39 38.0332 65.8594 38.209 65.2539C38.3848 64.6419 38.4727 63.9844 38.4727 63.2812C38.4727 62.4674 38.3848 61.7546 38.209 61.1426C38.0332 60.5241 37.7793 60.0065 37.4473 59.5898C37.1152 59.1732 36.7116 58.8607 36.2363 58.6523C35.7611 58.444 35.2207 58.3398 34.6152 58.3398C34.2832 58.3398 33.9967 58.3431 33.7559 58.3496C33.515 58.3561 33.3197 58.3626 33.1699 58.3691C32.9941 58.3822 32.8477 58.3919 32.7305 58.3984V68.291H34.6152ZM42.8711 67.1484C42.8711 66.6081 42.9492 66.1491 43.1055 65.7715C43.2617 65.3939 43.4896 65.0846 43.7891 64.8438C44.0951 64.6029 44.4629 64.4238 44.8926 64.3066C45.3288 64.1829 45.8268 64.1048 46.3867 64.0723L48.5645 63.9551V63.1738C48.5645 62.8223 48.5319 62.5326 48.4668 62.3047C48.4082 62.0768 48.3073 61.8945 48.1641 61.7578C48.0208 61.6211 47.8288 61.5267 47.5879 61.4746C47.3535 61.416 47.0605 61.3867 46.709 61.3867C46.3574 61.3867 46.0221 61.4258 45.7031 61.5039C45.3906 61.582 45.1172 61.6667 44.8828 61.7578C44.6029 61.8685 44.3457 61.9922 44.1113 62.1289C43.9681 61.9271 43.8542 61.735 43.7695 61.5527C43.6849 61.3639 43.6198 61.1947 43.5742 61.0449C43.5156 60.8757 43.4766 60.7129 43.457 60.5566C43.7695 60.4004 44.1048 60.2637 44.4629 60.1465C44.7754 60.0423 45.1335 59.9479 45.5371 59.8633C45.9473 59.7786 46.377 59.7363 46.8262 59.7363C47.5684 59.7363 48.1836 59.8014 48.6719 59.9316C49.1602 60.0618 49.5475 60.2604 49.834 60.5273C50.127 60.7878 50.3288 61.1198 50.4395 61.5234C50.5566 61.9206 50.6152 62.3926 50.6152 62.9395V68.3887L51.4355 69.3848V70H49.6289L48.877 69.1309H48.5254C48.4928 69.1634 48.4049 69.2383 48.2617 69.3555C48.125 69.4661 47.946 69.5866 47.7246 69.7168C47.5098 69.8405 47.2624 69.9512 46.9824 70.0488C46.709 70.1465 46.416 70.1953 46.1035 70.1953C45.6152 70.1953 45.1725 70.1237 44.7754 69.9805C44.3783 69.8307 44.0365 69.6224 43.75 69.3555C43.4701 69.082 43.252 68.7598 43.0957 68.3887C42.946 68.0111 42.8711 67.5977 42.8711 67.1484ZM45 66.9727C45 67.2721 45.0423 67.5228 45.127 67.7246C45.2116 67.9199 45.3288 68.0762 45.4785 68.1934C45.6348 68.3105 45.8203 68.3919 46.0352 68.4375C46.2565 68.4831 46.5007 68.5059 46.7676 68.5059C47.015 68.5059 47.2461 68.4766 47.4609 68.418C47.6823 68.3529 47.8743 68.2812 48.0371 68.2031C48.2259 68.1185 48.4017 68.0176 48.5645 67.9004V65.2734L46.6016 65.4004C46.2956 65.4199 46.0384 65.472 45.8301 65.5566C45.6283 65.6413 45.4655 65.752 45.3418 65.8887C45.2181 66.0254 45.1302 66.1882 45.0781 66.377C45.026 66.5592 45 66.7578 45 66.9727ZM53.0996 60.0195H55.1992L57.0352 67.7246L57.2598 68.9746L57.4551 67.7344L59.1543 60.0195H61.8008L63.5879 67.7246L63.8223 68.9746L64.0371 67.7246L65.7754 60.0195H67.8066L65.2871 70H62.3086L60.707 62.8711L60.4434 61.4258L60.1992 62.8711L58.7441 70H55.707L53.0996 60.0195ZM69.6172 67.1484C69.6172 66.6081 69.6953 66.1491 69.8516 65.7715C70.0078 65.3939 70.2357 65.0846 70.5352 64.8438C70.8411 64.6029 71.209 64.4238 71.6387 64.3066C72.0749 64.1829 72.5729 64.1048 73.1328 64.0723L75.3105 63.9551V63.1738C75.3105 62.8223 75.278 62.5326 75.2129 62.3047C75.1543 62.0768 75.0534 61.8945 74.9102 61.7578C74.7669 61.6211 74.5749 61.5267 74.334 61.4746C74.0996 61.416 73.8066 61.3867 73.4551 61.3867C73.1035 61.3867 72.7682 61.4258 72.4492 61.5039C72.1367 61.582 71.8633 61.6667 71.6289 61.7578C71.349 61.8685 71.0918 61.9922 70.8574 62.1289C70.7142 61.9271 70.6003 61.735 70.5156 61.5527C70.431 61.3639 70.3659 61.1947 70.3203 61.0449C70.2617 60.8757 70.2227 60.7129 70.2031 60.5566C70.5156 60.4004 70.8509 60.2637 71.209 60.1465C71.5215 60.0423 71.8796 59.9479 72.2832 59.8633C72.6934 59.7786 73.123 59.7363 73.5723 59.7363C74.3145 59.7363 74.9297 59.8014 75.418 59.9316C75.9062 60.0618 76.2936 60.2604 76.5801 60.5273C76.873 60.7878 77.0749 61.1198 77.1855 61.5234C77.3027 61.9206 77.3613 62.3926 77.3613 62.9395V68.3887L78.1816 69.3848V70H76.375L75.623 69.1309H75.2715C75.2389 69.1634 75.151 69.2383 75.0078 69.3555C74.8711 69.4661 74.6921 69.5866 74.4707 69.7168C74.2559 69.8405 74.0085 69.9512 73.7285 70.0488C73.4551 70.1465 73.1621 70.1953 72.8496 70.1953C72.3613 70.1953 71.9186 70.1237 71.5215 69.9805C71.1243 69.8307 70.7826 69.6224 70.4961 69.3555C70.2161 69.082 69.998 68.7598 69.8418 68.3887C69.6921 68.0111 69.6172 67.5977 69.6172 67.1484ZM71.7461 66.9727C71.7461 67.2721 71.7884 67.5228 71.873 67.7246C71.9577 67.9199 72.0749 68.0762 72.2246 68.1934C72.3809 68.3105 72.5664 68.3919 72.7812 68.4375C73.0026 68.4831 73.2467 68.5059 73.5137 68.5059C73.7611 68.5059 73.9922 68.4766 74.207 68.418C74.4284 68.3529 74.6204 68.2812 74.7832 68.2031C74.972 68.1185 75.1478 68.0176 75.3105 67.9004V65.2734L73.3477 65.4004C73.0417 65.4199 72.7845 65.472 72.5762 65.5566C72.3743 65.6413 72.2116 65.752 72.0879 65.8887C71.9642 66.0254 71.8763 66.1882 71.8242 66.377C71.7721 66.5592 71.7461 66.7578 71.7461 66.9727Z"
+                  fill="#0152A8" fill-opacity="0.85" />
+                <defs>
+                  <linearGradient id="paint0_linear_360_1118" x1="45.6274" y1="0.385" x2="45.6274" y2="35.455"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00F3FF" />
+                    <stop offset="0.238" stop-color="#00EFFC" />
+                    <stop offset="0.44" stop-color="#00E5F4" />
+                    <stop offset="0.629" stop-color="#00D3E7" />
+                    <stop offset="0.81" stop-color="#00BAD4" />
+                    <stop offset="0.983" stop-color="#009BBC" />
+                    <stop offset="1" stop-color="#0098BA" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_360_1118" x1="34.7806" y1="0.385" x2="34.7806" y2="35.455"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00F3FF" />
+                    <stop offset="0.238" stop-color="#00EFFC" />
+                    <stop offset="0.44" stop-color="#00E5F4" />
+                    <stop offset="0.629" stop-color="#00D3E7" />
+                    <stop offset="0.81" stop-color="#00BAD4" />
+                    <stop offset="0.983" stop-color="#009BBC" />
+                    <stop offset="1" stop-color="#0098BA" />
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_360_1118" x1="19.5271" y1="35.4252" x2="34.7209" y2="27.6859"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3E6896" />
+                    <stop offset="0.247" stop-color="#355881" />
+                    <stop offset="0.75" stop-color="#1F324E" />
+                    <stop offset="1" stop-color="#131D32" />
+                  </linearGradient>
+                </defs>
+              </svg></h3>
+              <p>
+                <!-- A108 Adam Street <br>
+                New York, NY 535022<br>
+                United States <br><br> -->
+                <strong>Phone:</strong> +79489283<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Health Care</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home Delivery</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Doctor Consultancy</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Regime Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AlDAWA</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+  
+  
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

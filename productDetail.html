@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>AlDAWA</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Favicons -->
+    <link href="assets/img/aldawalogo (1).png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+
+
+    <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .image-container {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        background-color: #fff;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 10px;
+      }
+  
+      .image-container img {
+        max-width: 100%;
+      }
+  
+      .medicine-name {
+        font-size: 16px;
+        font-weight: bold;
+         margin-top: 10px;
+      }
+  
+      .add-to-cart-button {
+        background-color: #3E6896;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        font-size: 12px;
+      }
+      .centerArrow{
+        position: relative;
+      }
+      .img-fluid {
+        max-width: 100px; /* Adjust the image size as needed */
+        max-height: 100px; /* Adjust the image size as needed */
+      }
+      .price {
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .delivery {
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .rating-box {
+        display: inline-block;
+        background-color: #1AAB2A; /* Green background color */
+        color: white; /* Text color */
+        padding: 5px 5px;
+        border-radius: 3px;
+        font-size: 10px; 
+  
+      }
+  
+      .star {
+        margin-left: 5px;
+      }
+      .rating-number {
+        font-size: 10px;
+        color: rgba(0,0,0,.58);
+  
+  
+      }
+      @media screen and (max-width: 768px) {
+        .Cart-Items {
+          flex-direction: column;
+        }
+        
+        .image-box {
+          max-width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+        
+        .about {
+          margin-top: 0;
+        }
+        
+        .dropdown {
+          margin-top: 0;
+        }
+        .CartContainer {
+          height: auto;
+        }
+      }
+      .icon-hover:hover {
+        border-color: #3b71ca !important;
+        background-color: white !important;
+        color: #3b71ca !important;
+      }
+
+      .icon-hover:hover i {
+        color: #3b71ca !important;
+      }
+      /* .arrow {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: #007bff;
+      } */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top " style="background-color: #f8f9fa; height: 70px;">
+      <div class=" d-flex  align-items-center justify-content-between">
+        <div class=" d-flex align-items-center justify-content-center">
+          <a href="index.html" class="logo me-auto" style="margin: 10px;font-size: 20px;">
+            <svg width="65" height="65" viewBox="0 0 96 74"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_360_1118" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="0" width="65"
+                height="48">
+                <path d="M16 0H81V48H16V0Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_360_1118)">
+                <path
+                  d="M36.2549 0L45.5522 35H55L50.1433 16.7223C50.1398 16.7164 50.1382 16.7093 50.1388 16.7022L45.7027 0H36.2549Z"
+                  fill="url(#paint0_linear_360_1118)" />
+                <path d="M25.4081 0L34.7054 35H44.1532L39.3939 17.0831L34.8559 0H25.4081Z"
+                  fill="url(#paint1_linear_360_1118)" />
+                <path d="M16.0002 35H25.4436L27.1215 28.6897V28.6846L29.4104 20.0684L24.6865 2.29042L16.0002 35Z"
+                  fill="url(#paint2_linear_360_1118)" />
+                <g style="mix-blend-mode:screen" opacity="0.4">
+                  <path d="M37.4546 1.0294L53.8002 33.9706L45.0474 1.0294H37.4546Z" fill="white" />
+                </g>
+                <g style="mix-blend-mode:screen" opacity="0.4">
+                  <path d="M26.6078 1.0294L42.9534 33.9706L34.2006 1.0294H26.6078Z" fill="white" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path d="M24.6865 2.29042L27.1215 28.6871L29.4113 20.0684L24.6865 2.29042Z" fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M25.4081 0L34.7054 35H44.1532C42.5771 34.8919 41.0054 34.8456 39.4293 34.7632L37.0695 34.6809L34.9577 34.6237C34.2582 31.7774 33.5366 28.9364 32.7928 26.1007L31.6417 21.7257L30.464 17.3559C29.6627 14.4478 28.8525 11.5449 28.0157 8.64706C27.5907 7.20588 27.1746 5.75441 26.7363 4.31838C26.298 2.88235 25.8685 1.43037 25.4081 0Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M36.2549 0L45.5522 35H55C53.4239 34.8919 51.8522 34.8456 50.2761 34.7632L47.9163 34.6809L45.8045 34.6237C45.105 31.7774 44.3834 28.9364 43.6396 26.1007L42.4885 21.7257L41.3108 17.3559C40.5095 14.4478 39.6993 11.5449 38.8626 8.64706C38.4375 7.20588 38.0214 5.75441 37.5831 4.31838C37.1448 2.88235 36.7153 1.43037 36.2549 0Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M38.8402 0C39.9825 0.138456 41.1247 0.226471 42.2714 0.293382C42.8425 0.329412 43.4136 0.365441 43.9847 0.386029C44.4585 0.406618 44.9322 0.427205 45.4059 0.437499C45.552 1.03971 45.6981 1.63728 45.8486 2.23897L46.3932 4.33434C46.5703 5.02868 46.7695 5.72404 46.9555 6.4189C47.1414 7.11375 47.3362 7.8086 47.5354 8.49831C47.7347 9.18801 47.9295 9.88801 48.142 10.5726C48.3545 11.2571 48.5537 11.952 48.7706 12.6365C49.2001 14.0057 49.6472 15.3593 50.1387 16.7027L45.7025 0.000514423L38.8402 0Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M27.843 0C29.0118 0.138456 30.1806 0.226471 31.3494 0.293382C31.9338 0.333872 32.5182 0.364755 33.1026 0.386029C33.5896 0.406618 34.0722 0.427205 34.5592 0.442132L35.0152 2.28015L35.5686 4.42132L36.1442 6.55169C36.3345 7.26765 36.5338 7.97228 36.7374 8.67743C36.9411 9.38257 37.1403 10.0929 37.3572 10.798C37.5742 11.5032 37.7734 12.2088 37.9992 12.9037C38.4331 14.3088 38.8935 15.7037 39.3938 17.0831L34.8558 0H27.843Z"
+                    fill="black" />
+                </g>
+                <g style="mix-blend-mode:multiply" opacity="0.3">
+                  <path
+                    d="M20.7241 34.7575C19.303 34.7014 17.8862 34.6546 16.4651 34.6191C16.806 33.4301 17.138 32.2411 17.4701 31.0471C17.8508 29.6933 18.2227 28.3344 18.5857 26.9701C19.3251 24.2529 20.0379 21.5199 20.7463 18.7919L21.7867 14.684L22.7961 10.5663C23.1237 9.19208 23.4558 7.81838 23.7612 6.43897C24.0756 5.05439 24.3988 3.67961 24.6865 2.29042L16.0002 35H25.4436C23.8719 34.8836 22.2958 34.8353 20.7241 34.7575Z"
+                    fill="black" />
+                </g>
+              </g>
+              <path
+                d="M4.75 56.7383H8.08008L12.0449 70H9.82812L8.61719 65.9473H4.33008L3.17773 70H0.902344L4.75 56.7383ZM8.1582 64.248L6.37109 57.7441L4.75977 64.248H8.1582ZM14.168 55.9473H16.1895V68.3594L16.7656 68.7695V70H16.209L16.1895 69.9805V70C15.5449 70 15.0469 69.8698 14.6953 69.6094C14.3438 69.349 14.168 68.9193 14.168 68.3203V55.9473ZM20.4414 63.3105H26.2227V65.0195H20.4414V63.3105ZM30.5234 56.748C30.8555 56.735 31.2233 56.7188 31.627 56.6992C31.9785 56.6862 32.3887 56.6732 32.8574 56.6602C33.3327 56.6471 33.8535 56.6406 34.4199 56.6406C35.4355 56.6406 36.334 56.7773 37.1152 57.0508C37.8965 57.3177 38.554 57.7246 39.0879 58.2715C39.6283 58.8184 40.0352 59.5052 40.3086 60.332C40.5885 61.1589 40.7285 62.1289 40.7285 63.2422C40.7285 64.3555 40.5788 65.3353 40.2793 66.1816C39.9798 67.0215 39.5501 67.7246 38.9902 68.291C38.4368 68.8574 37.763 69.2839 36.9688 69.5703C36.1745 69.8568 35.2793 70 34.2832 70H30.5234V56.748ZM34.6152 68.291C35.2207 68.291 35.7611 68.1641 36.2363 67.9102C36.7116 67.6497 37.1152 67.2949 37.4473 66.8457C37.7793 66.39 38.0332 65.8594 38.209 65.2539C38.3848 64.6419 38.4727 63.9844 38.4727 63.2812C38.4727 62.4674 38.3848 61.7546 38.209 61.1426C38.0332 60.5241 37.7793 60.0065 37.4473 59.5898C37.1152 59.1732 36.7116 58.8607 36.2363 58.6523C35.7611 58.444 35.2207 58.3398 34.6152 58.3398C34.2832 58.3398 33.9967 58.3431 33.7559 58.3496C33.515 58.3561 33.3197 58.3626 33.1699 58.3691C32.9941 58.3822 32.8477 58.3919 32.7305 58.3984V68.291H34.6152ZM42.8711 67.1484C42.8711 66.6081 42.9492 66.1491 43.1055 65.7715C43.2617 65.3939 43.4896 65.0846 43.7891 64.8438C44.0951 64.6029 44.4629 64.4238 44.8926 64.3066C45.3288 64.1829 45.8268 64.1048 46.3867 64.0723L48.5645 63.9551V63.1738C48.5645 62.8223 48.5319 62.5326 48.4668 62.3047C48.4082 62.0768 48.3073 61.8945 48.1641 61.7578C48.0208 61.6211 47.8288 61.5267 47.5879 61.4746C47.3535 61.416 47.0605 61.3867 46.709 61.3867C46.3574 61.3867 46.0221 61.4258 45.7031 61.5039C45.3906 61.582 45.1172 61.6667 44.8828 61.7578C44.6029 61.8685 44.3457 61.9922 44.1113 62.1289C43.9681 61.9271 43.8542 61.735 43.7695 61.5527C43.6849 61.3639 43.6198 61.1947 43.5742 61.0449C43.5156 60.8757 43.4766 60.7129 43.457 60.5566C43.7695 60.4004 44.1048 60.2637 44.4629 60.1465C44.7754 60.0423 45.1335 59.9479 45.5371 59.8633C45.9473 59.7786 46.377 59.7363 46.8262 59.7363C47.5684 59.7363 48.1836 59.8014 48.6719 59.9316C49.1602 60.0618 49.5475 60.2604 49.834 60.5273C50.127 60.7878 50.3288 61.1198 50.4395 61.5234C50.5566 61.9206 50.6152 62.3926 50.6152 62.9395V68.3887L51.4355 69.3848V70H49.6289L48.877 69.1309H48.5254C48.4928 69.1634 48.4049 69.2383 48.2617 69.3555C48.125 69.4661 47.946 69.5866 47.7246 69.7168C47.5098 69.8405 47.2624 69.9512 46.9824 70.0488C46.709 70.1465 46.416 70.1953 46.1035 70.1953C45.6152 70.1953 45.1725 70.1237 44.7754 69.9805C44.3783 69.8307 44.0365 69.6224 43.75 69.3555C43.4701 69.082 43.252 68.7598 43.0957 68.3887C42.946 68.0111 42.8711 67.5977 42.8711 67.1484ZM45 66.9727C45 67.2721 45.0423 67.5228 45.127 67.7246C45.2116 67.9199 45.3288 68.0762 45.4785 68.1934C45.6348 68.3105 45.8203 68.3919 46.0352 68.4375C46.2565 68.4831 46.5007 68.5059 46.7676 68.5059C47.015 68.5059 47.2461 68.4766 47.4609 68.418C47.6823 68.3529 47.8743 68.2812 48.0371 68.2031C48.2259 68.1185 48.4017 68.0176 48.5645 67.9004V65.2734L46.6016 65.4004C46.2956 65.4199 46.0384 65.472 45.8301 65.5566C45.6283 65.6413 45.4655 65.752 45.3418 65.8887C45.2181 66.0254 45.1302 66.1882 45.0781 66.377C45.026 66.5592 45 66.7578 45 66.9727ZM53.0996 60.0195H55.1992L57.0352 67.7246L57.2598 68.9746L57.4551 67.7344L59.1543 60.0195H61.8008L63.5879 67.7246L63.8223 68.9746L64.0371 67.7246L65.7754 60.0195H67.8066L65.2871 70H62.3086L60.707 62.8711L60.4434 61.4258L60.1992 62.8711L58.7441 70H55.707L53.0996 60.0195ZM69.6172 67.1484C69.6172 66.6081 69.6953 66.1491 69.8516 65.7715C70.0078 65.3939 70.2357 65.0846 70.5352 64.8438C70.8411 64.6029 71.209 64.4238 71.6387 64.3066C72.0749 64.1829 72.5729 64.1048 73.1328 64.0723L75.3105 63.9551V63.1738C75.3105 62.8223 75.278 62.5326 75.2129 62.3047C75.1543 62.0768 75.0534 61.8945 74.9102 61.7578C74.7669 61.6211 74.5749 61.5267 74.334 61.4746C74.0996 61.416 73.8066 61.3867 73.4551 61.3867C73.1035 61.3867 72.7682 61.4258 72.4492 61.5039C72.1367 61.582 71.8633 61.6667 71.6289 61.7578C71.349 61.8685 71.0918 61.9922 70.8574 62.1289C70.7142 61.9271 70.6003 61.735 70.5156 61.5527C70.431 61.3639 70.3659 61.1947 70.3203 61.0449C70.2617 60.8757 70.2227 60.7129 70.2031 60.5566C70.5156 60.4004 70.8509 60.2637 71.209 60.1465C71.5215 60.0423 71.8796 59.9479 72.2832 59.8633C72.6934 59.7786 73.123 59.7363 73.5723 59.7363C74.3145 59.7363 74.9297 59.8014 75.418 59.9316C75.9062 60.0618 76.2936 60.2604 76.5801 60.5273C76.873 60.7878 77.0749 61.1198 77.1855 61.5234C77.3027 61.9206 77.3613 62.3926 77.3613 62.9395V68.3887L78.1816 69.3848V70H76.375L75.623 69.1309H75.2715C75.2389 69.1634 75.151 69.2383 75.0078 69.3555C74.8711 69.4661 74.6921 69.5866 74.4707 69.7168C74.2559 69.8405 74.0085 69.9512 73.7285 70.0488C73.4551 70.1465 73.1621 70.1953 72.8496 70.1953C72.3613 70.1953 71.9186 70.1237 71.5215 69.9805C71.1243 69.8307 70.7826 69.6224 70.4961 69.3555C70.2161 69.082 69.998 68.7598 69.8418 68.3887C69.6921 68.0111 69.6172 67.5977 69.6172 67.1484ZM71.7461 66.9727C71.7461 67.2721 71.7884 67.5228 71.873 67.7246C71.9577 67.9199 72.0749 68.0762 72.2246 68.1934C72.3809 68.3105 72.5664 68.3919 72.7812 68.4375C73.0026 68.4831 73.2467 68.5059 73.5137 68.5059C73.7611 68.5059 73.9922 68.4766 74.207 68.418C74.4284 68.3529 74.6204 68.2812 74.7832 68.2031C74.972 68.1185 75.1478 68.0176 75.3105 67.9004V65.2734L73.3477 65.4004C73.0417 65.4199 72.7845 65.472 72.5762 65.5566C72.3743 65.6413 72.2116 65.752 72.0879 65.8887C71.9642 66.0254 71.8763 66.1882 71.8242 66.377C71.7721 66.5592 71.7461 66.7578 71.7461 66.9727Z"
+                fill="#0152A8" fill-opacity="0.85" />
+              <defs>
+                <linearGradient id="paint0_linear_360_1118" x1="45.6274" y1="0.385" x2="45.6274" y2="35.455"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00F3FF" />
+                  <stop offset="0.238" stop-color="#00EFFC" />
+                  <stop offset="0.44" stop-color="#00E5F4" />
+                  <stop offset="0.629" stop-color="#00D3E7" />
+                  <stop offset="0.81" stop-color="#00BAD4" />
+                  <stop offset="0.983" stop-color="#009BBC" />
+                  <stop offset="1" stop-color="#0098BA" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_360_1118" x1="34.7806" y1="0.385" x2="34.7806" y2="35.455"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00F3FF" />
+                  <stop offset="0.238" stop-color="#00EFFC" />
+                  <stop offset="0.44" stop-color="#00E5F4" />
+                  <stop offset="0.629" stop-color="#00D3E7" />
+                  <stop offset="0.81" stop-color="#00BAD4" />
+                  <stop offset="0.983" stop-color="#009BBC" />
+                  <stop offset="1" stop-color="#0098BA" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_360_1118" x1="19.5271" y1="35.4252" x2="34.7209" y2="27.6859"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3E6896" />
+                  <stop offset="0.247" stop-color="#355881" />
+                  <stop offset="0.75" stop-color="#1F324E" />
+                  <stop offset="1" stop-color="#131D32" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+  
+          <!-- <h3 class="logo me-auto" style="font-size: 16px; text-decoration: none;">Al-DAWA
+          </h3> -->
+        </div>
+        <nav id="navbar" class="navbar" id="secondary-navbar" class="navbar collapsed">
+          <ul class="ms-5">
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+  
+            <li><a class="nav-link   scrollto" href="#portfolio">Stores</a></li>
+            <li><a class="nav-link scrollto" href="#team">Blog</a></li>
+            <li class="dropdown"><a href="#"><span>Pharmacy
+                </span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Health Drinks</a></li>
+                <li class="dropdown"><a href="#"><span>Sports Nutrition</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Adult Nutrition</a></li>
+                    <li><a href="#">Kids Nutrition</a></li>
+                    <li><a href="#">Energy Drinks</a></li>
+                    <li><a href="#">Honey</a></li>
+                    <li><a href="#">Protein Powders & Drinks</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Minerals
+  
+                  </a></li>
+                <li><a href="#">Speciality Supplements</a></li>
+                <li><a href="#">Omega & Fish Oil</a></li>
+              </ul>
+            </li>
+            <li class="ml-auto"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+            <li>
+              <form class="navbar-form navbar-left">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="input-group" style="box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);">
+                      <input id="searchInput" type="text" class="form-control" placeholder="Search for..."
+                        style="width: 250px;">
+                      <span class="input-group-btn">
+                        <button id="myButton" type="button" class="btn btn-default" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn "><span class="bi bi-cart3" style="font-size: 18px;"></span></button>
+                    <button type="button" class="btn btn-light"><span class="bi bi-person-circle"
+                        style="font-size: 18px;"></span></button>
+                  </div>
+                </div>
+  
+  
+                <script src="script.js"></script>
+  
+                <!-- <a class="getstarted scrollto" href="#about">Get Started</a> -->
+              </form>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+      <!-- .navbar -->
+      <nav id="secondary-navbar" class="navbar">
+        <!-- Secondary navbar code -->
+        <!-- ... -->
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">AlDAWA Products</a></li>
+          <li><a class="nav-link scrollto" href="#about">Covid Essentials</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="#portfolio">Women Care</a></li>
+          <li><a class="nav-link scrollto" href="#team">Ayurveda</a></li>
+          <li><a class="nav-link scrollto" href="#about">Insurance</a></li>
+          <li><a class="nav-link scrollto" href="#services">Lab tests</a></li>
+        </ul>
+      </nav>
+  
+  
+  
+      </div>
+    </header>
+    <!-- ======= Hero Section ======= -->
+    <!-- <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Better Solutions For Your Business</h1>
+          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div> -->
+    <script src="script.js"></script>
+    <section class="py-5" style="margin-top: 120px;">
+      <div class="container">
+        <div class="row gx-5">
+          <aside class="col-lg-6">
+            <div class="border rounded-4 mb-3 d-flex justify-content-center">
+              <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image">
+                <img style="width: auto; height: 250px; margin: auto;" class="rounded-4 fit" src="assets/img/crocin-650-advance-tablet.webp" />
+              </a>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="" class="item-thumb">
+                <img width="60" height="60" class="rounded-2" src="assets/img/we4g87qy8cdpn0gxr5bo.webp" />
+              </a>
+              <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="" class="item-thumb">
+                <img width="60" height="60" class="rounded-2" src="assets/img/txtwzgxpgzzldrokevky.webp" />
+              </a>
+              <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="" class="item-thumb">
+                <img width="60" height="60" class="rounded-2" src="assets/img/6eb8a04ec4c14d56b30f39dde3efb87f.webp" />
+              </a>
+              <!-- <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big4.webp" class="item-thumb">
+                <img width="60" height="60" class="rounded-2" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big4.webp" />
+              </a>
+              <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big.webp" class="item-thumb">
+                <img width="60" height="60" class="rounded-2" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big.webp" />
+              </a> -->
+            </div>
+            <!-- thumbs-wrap.// -->
+            <!-- gallery-wrap .end// -->
+          </aside>
+          <main class="col-lg-6">
+            <div class="ps-lg-3">
+              <h4 class="title text-dark" style="margin-bottom: 20px;" >
+                Crocin 650 advance
+              </h4>
+              <div class="d-flex flex-row my-3">
+                <div class="mb-1 me-2">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+
+                    <div class="rating-box">
+                      <span class="rating">4.6</span>
+                      <span class="star">&#9733;</span>
+                    </div>
+                    <span class="rating-number">465 rating</span>
+
+                </div>
+                <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
+                <span class=" ms-2" style="color: #1AAB2A;">In stock</span>
+              </div>
+    
+              <div class="mb-3">
+                <span class="h5 del "style="color: red;">MRP&#8377;85</span>
+                <span class="price font-weight-bold" style="font-weight: bold;" >&#8377;80</span>
+                <span class="text-muted">/per Strip</span>
+              </div>
+    
+              <p>
+                Crocin 650 Advance Tablet is a pain-relieving medicine with Optizorb technology, which is designed to provide fast and effective relief from pain and fever. The active ingredient in the tablet is paracetamol, which works by blocking the production of certain chemicals in the body that cause pain and fever
+              </p>
+
+              <h5 style="font-weight: 800;">Product highlights</h5>
+              <ul class="product-highlights">
+                <li> Provides effective pain relief</li>
+                <li>Helps reduce fever</li>
+                <li> Fast acting</li>
+                <li> Convenient to use</li>
+              </ul>
+    
+              <hr />
+    
+              <div class="row mb-4">
+                <!-- <div class="col-md-4 col-6">
+                  <label class="mb-2">Size</label>
+                  <select class=" border border-secondary" style="height: 35px;">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                  </select>
+                </div> -->
+                <!-- col.// -->
+                <div class="col-md-4 col-6 mb-3">
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Quantity</button>
+                    <ul class="dropdown-menu" style="width: 10px;">
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-warning shadow-0"> Buy now </a>
+              <button type="button" id="shoppingCart" style="border: none;"><a href="#" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a></button>
+              <a href="#" class="btn btn-light border border-secondary py-2 icon-hover px-3"> <i class="me-1 fa fa-heart fa-lg"></i> Save </a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    
+    <section class="bg-light border-top py-4">
+      <div class="container">
+        <div class="row gx-4">
+          <div class="col-lg-8 mb-4">
+            <div class="border rounded-2 px-3 py-2 bg-white">
+              <!-- Pills navs -->
+              <ul class="nav  nav-justified mb-3" style="background-color:rgb(51,122,183) ;color: #fff;">
+                <li class="nav-item d-flex" role="presentation" style="background-color:rgb(51,122,183) ;color: #fff;">
+                  <a class="nav-link d-flex align-items-center justify-content-center w-100 active" style="background-color:rgb(51,122,183) ;color: #fff;">Information about Crocin 650 Advance Tablet</a>
+                </li>
+                <!-- <li class="nav-item d-flex" role="presentation">
+                  <a class="nav-link d-flex align-items-center justify-content-center w-100" id="ex1-tab-2" data-mdb-toggle="pill" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">Warranty info</a>
+                </li>
+                <li class="nav-item d-flex" role="presentation">
+                  <a class="nav-link d-flex align-items-center justify-content-center w-100" id="ex1-tab-3" data-mdb-toggle="pill" href="#ex1-pills-3" role="tab" aria-controls="ex1-pills-3" aria-selected="false">Shipping info</a>
+                </li>
+                <li class="nav-item d-flex" role="presentation">
+                  <a class="nav-link d-flex align-items-center justify-content-center w-100" id="ex1-tab-4" data-mdb-toggle="pill" href="#ex1-pills-4" role="tab" aria-controls="ex1-pills-4" aria-selected="false">Seller profile</a>
+                </li> -->
+              </ul>
+              <!-- Pills navs -->
+    
+              <!-- Pills content -->
+              <div style="margin-left: 10px;">
+                <div>
+                  <p>
+                    <strong> 650 Advance Tablet</strong> is a pain-relieving medicine with Optizorb technology, which is designed to provide fast and effective relief from pain and fever. The active ingredient in the tablet is paracetamol, which works by blocking the production of certain chemicals in the body that cause pain and fever. Crocin 650 Advance Tablet is commonly used to manage mild to moderate pain such as headaches, toothaches, menstrual cramps, and muscle aches. It also helps to reduce fever, making it a popular choice for individuals suffering from fever due to infections or illnesses.
+                  </p>
+                  <h5>Key ingredient:</h5>
+                  <div class="row mb-2">
+                    <div class="col-12 col-md-12">
+                      <ul class=" mb-0">
+                        <li><i class="fas fa-check text-success me-2"></i>The active ingredient paracetamol helps to block the production of certain chemicals in the body that causes pain, providing relief from mild to moderate pain such as headache and muscle aches</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Crocin 650 Advance Tablet is also effective in reducing fever caused by infections or illnesses</li>
+                        <li><i class="fas fa-check text-success me-2"></i>The Optizorb technology used in Crocin 650 Advance Tablet is designed to provide fast and effective relief from pain and fever</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Crocin 650 Advance Tablet is a safe and effective pain-relieving medicine that can be used by individuals of all ages</li>
+                      </ul>
+                    </div>
+                    <!-- <div class="col-12 col-md-6 mb-0">
+                      <ul class="">
+                        <li><i class="fas fa-check text-success me-2"></i>Easy fast and ver good</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Some great feature name here</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Modern style and design</li>
+                      </ul>
+                    </div> -->
+                  </div>
+                  <!-- <table class="table border mt-3 mb-2">
+                    <tr>
+                      <th class="py-2">Display:</th>
+                      <td class="py-2">13.3-inch LED-backlit display with IPS</td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Processor capacity:</th>
+                      <td class="py-2">2.3GHz dual-core Intel Core i5</td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Camera quality:</th>
+                      <td class="py-2">720p FaceTime HD camera</td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Memory</th>
+                      <td class="py-2">8 GB RAM or 16 GB RAM</td>
+                    </tr>
+                    <tr>
+                      <th class="py-2">Graphics</th>
+                      <td class="py-2">Intel Iris Plus Graphics 640</td>
+                    </tr>
+                  </table> -->
+                </div>
+                <div >
+                  <h5>Quick Tips:</h5><br />
+                 
+                  Consult with a healthcare professional before starting any new medication to determine if it is safe and appropriate for your individual health needs.
+                </div>
+                <div >
+                  <h5>Frequently Asked Questions:</h5><br>
+
+                    Q. Are there any side effects of paracetamol?<br>
+                    Common side effects include nausea, stomach pain, and liver damage when taken in excessive amounts.<br>
+                    
+                    Q. Can I take paracetamol with other medications?<br>
+                    It is recommended to consult with a healthcare professional before taking paracetamol with other medications as they may interact and result in negative side effects
+
+                        Q. Are there any side effects of paracetamol?<br>
+                        Common side effects include nausea, stomach pain, and liver damage when taken in excessive amounts.<br>
+
+                        Q. Can I take paracetamol with other medications?<br>
+                        It is recommended to consult with a healthcare professional before taking paracetamol with other medications as they may interact and result in negative side effects<br>
+                </div>
+                <!-- <div>
+                  Some other tab content or sample information now <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.
+                </div> -->
+              </div>
+              <!-- Pills content -->
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="px-0 border rounded-2 shadow-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Similar items</h5>
+                  <div class="d-flex mb-3">
+                    <a href="#" class="me-3">
+                      <img src="assets/img/278b211d32c64c0884dc4b7befcb7c40.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                    </a>
+                    <div class="info">
+                      <a href="#" class="nav-link mb-1">
+                        <div class="style__name___3YOZc style__large-font___2dBUf">Saridon Advance Tablet for 5 in 1 Pain Relief</div>
+                      </a>
+                      <strong class="text-dark"> MRP&#8377;85</strong>
+                    </div>
+                  </div>
+    
+                  <div class="d-flex mb-3">
+                    <a href="#" class="me-3">
+                      <img src="assets/img/asqryelbmu85zqqovpdu.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                    </a>
+                    <div class="info">
+                      <a href="#" class="nav-link mb-1">
+                        Berryheal Combo Pack of Omega 
+                      </a>
+                      <strong class="text-dark"> MRP&#8377;3000</strong>
+                    </div>
+                  </div>
+    
+                  <div class="d-flex mb-3">
+                    <a href="#" class="me-3">
+                      <img src="assets/img/d8c70422-43f5-4199-9617-2dbfc348a5fb.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                    </a>
+                    <div class="info">
+                      <a href="#" class="nav-link mb-1"><div class="style__name___3YOZc style__large-font___2dBUf">Zandu Ortho Vedic Knee &amp; Joint Pain Oil</div> </a>
+                      <strong class="text-dark"> MRP&#8377;221</strong>
+                    </div>
+                  </div>
+    
+                  <div class="d-flex">
+                    <a href="#" class="me-3">
+                      <img src="assets/img/db676bfe52a54e85aec5733355fa7959.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                    </a>
+                    <div class="info">
+                      <a href="#" class="nav-link mb-1"> <div class="style__name___3YOZc style__large-font___2dBUf">New Saridon for Fast Headache Relief Tablet</div> </a>
+                      <strong class="text-dark"> MRP&#8377;40</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>document.getElementById("shoppingCart").addEventListener("click", function () {
+      window.location.href = "shoppingCart.html";
+    });</script>
+    <section  >
+        
+    </section> 
+   
+    
+ 
+
+    <main id="main">
+
+        <!-- ======= Clients Section ======= -->
+        <!-- <section id="clients" class="clients section-bg">
+            <div class="container">
+                <h4>TOP DEALS ON FEATURE BRANDS
+                    Select any of the brands below to see its products on offer</h4>
+
+                <div class="row" data-aos="zoom-in">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/download.jpeg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/download2.jpeg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section> -->
+
+        <h4 class="text-center">Top Trending brands</h4>
+
+        <section class="centerArrow" style="margin-top: 20px; background-color: #f3f5fa;">
+            <div class="scroll-container" style="margin-top: 20px;">
+                <div class="row">
+      
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/dk8ubvz6wizprqmfsfav.webp" class="img-fluid" alt="">
+                        <h5 class="medicine-name">Zingavita Vitamin C </h5>
+                        <div class="price"><div class="d-flex align-items-center price">
+                          <div class="del mr-2"><span class="text-dark">MRP&#8377;219.21</span></div>
+                        </div></div>
+                        <div class="rating-box">
+                          <span class="rating">4.7</span>
+                          <span class="star">&#9733;</span>
+                        </div>
+                        <span class="rating-number">1465 rating</span>
+                        <div class="delivery">Delivery by:<span style="font-weight: bold;">Tomorrow 11pm</span> </div>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+      
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/eh4vt8l9fuo4nvx3qwif.webp"
+                            class="img-fluid" alt="">
+                            <h4 class="medicine-name">Allegra-M Tablet</h4>
+                            <div class="price"><div class="d-flex align-items-center price">
+                              <div class="del mr-2"><span class="text-dark">MRP&#8377;22.71</span></div>
+                            </div></div>
+                            <div class="rating-box">
+                              <span class="rating">4.3</span>
+                              <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-number">965 rating</span>
+                            <div class="delivery">Delivery by: Tomorrow 1pm</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+      
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/purehands-orange-100ml-front.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name"><p class="ProductCard_productName__f82e9">Himalaya Baby Lotion</p></h4>
+                        <div class="price"><div class="d-flex align-items-center price">
+                          <div class="del mr-2"><span class="text-dark">MRP&#8377;300.91</span></div>
+                        </div></div>
+                        <div class="rating-box">
+                          <span class="rating">4.6</span>
+                          <span class="star">&#9733;</span>
+                        </div>
+                        <span class="rating-number">465 rating</span>
+                        <div class="delivery">Delivery by: Tomorrow 9am</div>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+      
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex  flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/OPHTHACARE-DROPS-10ML.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name">Himalaya Eye Drop</h4>
+                        <div class="price"><div class="d-flex align-items-center price">
+                          <div class="del mr-2"><span class="text-dark">MRP&#8377;30.91</span></div>
+                        </div></div>
+                        <div class="rating-box">
+                          <span class="rating">4.6</span>
+                          <span class="star">&#9733;</span>
+                        </div>
+                        <span class="rating-number">465 rating</span>
+                        <div class="delivery">Delivery by: Tomorrow 10pm</div>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+      
+                    <!-- <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/medicines-offers.jpeg" class="img-fluid" alt="">
+                        <h4 class="medicine-name">KOFLET-SF</h4>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div> -->
+      
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/Septillin-Tablets.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name"><p class="ProductCard_productName__f82e9">Himalaya Septilin</p></h4>
+                        <div class="price"><div class="d-flex align-items-center price">
+                          <div class="del mr-2"><span class="text-dark">MRP&#8377;30.91</span></div>
+                        </div></div>
+                        <div class="rating-box">
+                          <span class="rating">4.6</span>
+                          <span class="star">&#9733;</span>
+                        </div>
+                        <span class="rating-number">465 rating</span>
+                        <div class="delivery">Delivery by: Tomorrow 10pm</div>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/xlfda4lsg7frx2xzwt3g.webp" class="img-fluid" alt="">
+                        <h4 class="medicine-name">Antiflu 75mg Capsule</h4>
+                        <div class="price"><div class="d-flex align-items-center price">
+                          <div class="del mr-2"><span class="text-dark">MRP&#8377;674</span></div>
+                        </div></div>
+                        <div class="rating-box">
+                          <span class="rating">4.6</span>
+                          <span class="star">&#9733;</span>
+                        </div>
+                        <span class="rating-number">465 rating</span>
+                        <div class="delivery">Delivery by: Tomorrow 5pm</div>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                    <div
+                        class="image-wrapper col-lg-2 col-md-4 col-6 d-flex flex-column align-items-center justify-content-center image-container">
+                        <img src="assets/img/Liv52_-_2000x2000_c4ec53b4-0db1-40bd-9262-60a97c5a21d2.webp"
+                            class="img-fluid" alt="">
+                            <h4 class="medicine-name">Himalaya Liv 52</h4>
+                            <div class="price"><div class="d-flex align-items-center price">
+                              <div class="del mr-2"><span class="text-dark">MRP&#8377;440.91</span></div>
+                            </div></div>
+                            <div class="rating-box">
+                              <span class="rating">4.1</span>
+                              <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-number">467 rating</span>
+                            <div class="delivery">Delivery by: Tomorrow 5pm</div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                  
+      
+                </div>
+            </div>
+      
+            <button class="arrow-button left-button">&lt;</button>
+            <button class="arrow-button right-button">&gt;</button>
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const leftButton = document.querySelector(".left-button");
+                const rightButton = document.querySelector(".right-button");
+                const scrollContainer = document.querySelector(".scroll-container");
+
+                leftButton.addEventListener("click", () => {
+                    scrollContainer.scrollBy({
+                        left: -200,
+                        behavior: "smooth",
+                    });
+                });
+
+                rightButton.addEventListener("click", () => {
+                    scrollContainer.scrollBy({
+                        left: 200,
+                        behavior: "smooth",
+                    });
+                });
+            });
+        </script>
+
+     
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3><svg width="91" height="71" viewBox="0 0 96 74"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_360_1118" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="0" width="65"
+                  height="48">
+                  <path d="M16 0H81V48H16V0Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_360_1118)">
+                  <path
+                    d="M36.2549 0L45.5522 35H55L50.1433 16.7223C50.1398 16.7164 50.1382 16.7093 50.1388 16.7022L45.7027 0H36.2549Z"
+                    fill="url(#paint0_linear_360_1118)" />
+                  <path d="M25.4081 0L34.7054 35H44.1532L39.3939 17.0831L34.8559 0H25.4081Z"
+                    fill="url(#paint1_linear_360_1118)" />
+                  <path d="M16.0002 35H25.4436L27.1215 28.6897V28.6846L29.4104 20.0684L24.6865 2.29042L16.0002 35Z"
+                    fill="url(#paint2_linear_360_1118)" />
+                  <g style="mix-blend-mode:screen" opacity="0.4">
+                    <path d="M37.4546 1.0294L53.8002 33.9706L45.0474 1.0294H37.4546Z" fill="white" />
+                  </g>
+                  <g style="mix-blend-mode:screen" opacity="0.4">
+                    <path d="M26.6078 1.0294L42.9534 33.9706L34.2006 1.0294H26.6078Z" fill="white" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path d="M24.6865 2.29042L27.1215 28.6871L29.4113 20.0684L24.6865 2.29042Z" fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M25.4081 0L34.7054 35H44.1532C42.5771 34.8919 41.0054 34.8456 39.4293 34.7632L37.0695 34.6809L34.9577 34.6237C34.2582 31.7774 33.5366 28.9364 32.7928 26.1007L31.6417 21.7257L30.464 17.3559C29.6627 14.4478 28.8525 11.5449 28.0157 8.64706C27.5907 7.20588 27.1746 5.75441 26.7363 4.31838C26.298 2.88235 25.8685 1.43037 25.4081 0Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M36.2549 0L45.5522 35H55C53.4239 34.8919 51.8522 34.8456 50.2761 34.7632L47.9163 34.6809L45.8045 34.6237C45.105 31.7774 44.3834 28.9364 43.6396 26.1007L42.4885 21.7257L41.3108 17.3559C40.5095 14.4478 39.6993 11.5449 38.8626 8.64706C38.4375 7.20588 38.0214 5.75441 37.5831 4.31838C37.1448 2.88235 36.7153 1.43037 36.2549 0Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M38.8402 0C39.9825 0.138456 41.1247 0.226471 42.2714 0.293382C42.8425 0.329412 43.4136 0.365441 43.9847 0.386029C44.4585 0.406618 44.9322 0.427205 45.4059 0.437499C45.552 1.03971 45.6981 1.63728 45.8486 2.23897L46.3932 4.33434C46.5703 5.02868 46.7695 5.72404 46.9555 6.4189C47.1414 7.11375 47.3362 7.8086 47.5354 8.49831C47.7347 9.18801 47.9295 9.88801 48.142 10.5726C48.3545 11.2571 48.5537 11.952 48.7706 12.6365C49.2001 14.0057 49.6472 15.3593 50.1387 16.7027L45.7025 0.000514423L38.8402 0Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M27.843 0C29.0118 0.138456 30.1806 0.226471 31.3494 0.293382C31.9338 0.333872 32.5182 0.364755 33.1026 0.386029C33.5896 0.406618 34.0722 0.427205 34.5592 0.442132L35.0152 2.28015L35.5686 4.42132L36.1442 6.55169C36.3345 7.26765 36.5338 7.97228 36.7374 8.67743C36.9411 9.38257 37.1403 10.0929 37.3572 10.798C37.5742 11.5032 37.7734 12.2088 37.9992 12.9037C38.4331 14.3088 38.8935 15.7037 39.3938 17.0831L34.8558 0H27.843Z"
+                      fill="black" />
+                  </g>
+                  <g style="mix-blend-mode:multiply" opacity="0.3">
+                    <path
+                      d="M20.7241 34.7575C19.303 34.7014 17.8862 34.6546 16.4651 34.6191C16.806 33.4301 17.138 32.2411 17.4701 31.0471C17.8508 29.6933 18.2227 28.3344 18.5857 26.9701C19.3251 24.2529 20.0379 21.5199 20.7463 18.7919L21.7867 14.684L22.7961 10.5663C23.1237 9.19208 23.4558 7.81838 23.7612 6.43897C24.0756 5.05439 24.3988 3.67961 24.6865 2.29042L16.0002 35H25.4436C23.8719 34.8836 22.2958 34.8353 20.7241 34.7575Z"
+                      fill="black" />
+                  </g>
+                </g>
+                <path
+                  d="M4.75 56.7383H8.08008L12.0449 70H9.82812L8.61719 65.9473H4.33008L3.17773 70H0.902344L4.75 56.7383ZM8.1582 64.248L6.37109 57.7441L4.75977 64.248H8.1582ZM14.168 55.9473H16.1895V68.3594L16.7656 68.7695V70H16.209L16.1895 69.9805V70C15.5449 70 15.0469 69.8698 14.6953 69.6094C14.3438 69.349 14.168 68.9193 14.168 68.3203V55.9473ZM20.4414 63.3105H26.2227V65.0195H20.4414V63.3105ZM30.5234 56.748C30.8555 56.735 31.2233 56.7188 31.627 56.6992C31.9785 56.6862 32.3887 56.6732 32.8574 56.6602C33.3327 56.6471 33.8535 56.6406 34.4199 56.6406C35.4355 56.6406 36.334 56.7773 37.1152 57.0508C37.8965 57.3177 38.554 57.7246 39.0879 58.2715C39.6283 58.8184 40.0352 59.5052 40.3086 60.332C40.5885 61.1589 40.7285 62.1289 40.7285 63.2422C40.7285 64.3555 40.5788 65.3353 40.2793 66.1816C39.9798 67.0215 39.5501 67.7246 38.9902 68.291C38.4368 68.8574 37.763 69.2839 36.9688 69.5703C36.1745 69.8568 35.2793 70 34.2832 70H30.5234V56.748ZM34.6152 68.291C35.2207 68.291 35.7611 68.1641 36.2363 67.9102C36.7116 67.6497 37.1152 67.2949 37.4473 66.8457C37.7793 66.39 38.0332 65.8594 38.209 65.2539C38.3848 64.6419 38.4727 63.9844 38.4727 63.2812C38.4727 62.4674 38.3848 61.7546 38.209 61.1426C38.0332 60.5241 37.7793 60.0065 37.4473 59.5898C37.1152 59.1732 36.7116 58.8607 36.2363 58.6523C35.7611 58.444 35.2207 58.3398 34.6152 58.3398C34.2832 58.3398 33.9967 58.3431 33.7559 58.3496C33.515 58.3561 33.3197 58.3626 33.1699 58.3691C32.9941 58.3822 32.8477 58.3919 32.7305 58.3984V68.291H34.6152ZM42.8711 67.1484C42.8711 66.6081 42.9492 66.1491 43.1055 65.7715C43.2617 65.3939 43.4896 65.0846 43.7891 64.8438C44.0951 64.6029 44.4629 64.4238 44.8926 64.3066C45.3288 64.1829 45.8268 64.1048 46.3867 64.0723L48.5645 63.9551V63.1738C48.5645 62.8223 48.5319 62.5326 48.4668 62.3047C48.4082 62.0768 48.3073 61.8945 48.1641 61.7578C48.0208 61.6211 47.8288 61.5267 47.5879 61.4746C47.3535 61.416 47.0605 61.3867 46.709 61.3867C46.3574 61.3867 46.0221 61.4258 45.7031 61.5039C45.3906 61.582 45.1172 61.6667 44.8828 61.7578C44.6029 61.8685 44.3457 61.9922 44.1113 62.1289C43.9681 61.9271 43.8542 61.735 43.7695 61.5527C43.6849 61.3639 43.6198 61.1947 43.5742 61.0449C43.5156 60.8757 43.4766 60.7129 43.457 60.5566C43.7695 60.4004 44.1048 60.2637 44.4629 60.1465C44.7754 60.0423 45.1335 59.9479 45.5371 59.8633C45.9473 59.7786 46.377 59.7363 46.8262 59.7363C47.5684 59.7363 48.1836 59.8014 48.6719 59.9316C49.1602 60.0618 49.5475 60.2604 49.834 60.5273C50.127 60.7878 50.3288 61.1198 50.4395 61.5234C50.5566 61.9206 50.6152 62.3926 50.6152 62.9395V68.3887L51.4355 69.3848V70H49.6289L48.877 69.1309H48.5254C48.4928 69.1634 48.4049 69.2383 48.2617 69.3555C48.125 69.4661 47.946 69.5866 47.7246 69.7168C47.5098 69.8405 47.2624 69.9512 46.9824 70.0488C46.709 70.1465 46.416 70.1953 46.1035 70.1953C45.6152 70.1953 45.1725 70.1237 44.7754 69.9805C44.3783 69.8307 44.0365 69.6224 43.75 69.3555C43.4701 69.082 43.252 68.7598 43.0957 68.3887C42.946 68.0111 42.8711 67.5977 42.8711 67.1484ZM45 66.9727C45 67.2721 45.0423 67.5228 45.127 67.7246C45.2116 67.9199 45.3288 68.0762 45.4785 68.1934C45.6348 68.3105 45.8203 68.3919 46.0352 68.4375C46.2565 68.4831 46.5007 68.5059 46.7676 68.5059C47.015 68.5059 47.2461 68.4766 47.4609 68.418C47.6823 68.3529 47.8743 68.2812 48.0371 68.2031C48.2259 68.1185 48.4017 68.0176 48.5645 67.9004V65.2734L46.6016 65.4004C46.2956 65.4199 46.0384 65.472 45.8301 65.5566C45.6283 65.6413 45.4655 65.752 45.3418 65.8887C45.2181 66.0254 45.1302 66.1882 45.0781 66.377C45.026 66.5592 45 66.7578 45 66.9727ZM53.0996 60.0195H55.1992L57.0352 67.7246L57.2598 68.9746L57.4551 67.7344L59.1543 60.0195H61.8008L63.5879 67.7246L63.8223 68.9746L64.0371 67.7246L65.7754 60.0195H67.8066L65.2871 70H62.3086L60.707 62.8711L60.4434 61.4258L60.1992 62.8711L58.7441 70H55.707L53.0996 60.0195ZM69.6172 67.1484C69.6172 66.6081 69.6953 66.1491 69.8516 65.7715C70.0078 65.3939 70.2357 65.0846 70.5352 64.8438C70.8411 64.6029 71.209 64.4238 71.6387 64.3066C72.0749 64.1829 72.5729 64.1048 73.1328 64.0723L75.3105 63.9551V63.1738C75.3105 62.8223 75.278 62.5326 75.2129 62.3047C75.1543 62.0768 75.0534 61.8945 74.9102 61.7578C74.7669 61.6211 74.5749 61.5267 74.334 61.4746C74.0996 61.416 73.8066 61.3867 73.4551 61.3867C73.1035 61.3867 72.7682 61.4258 72.4492 61.5039C72.1367 61.582 71.8633 61.6667 71.6289 61.7578C71.349 61.8685 71.0918 61.9922 70.8574 62.1289C70.7142 61.9271 70.6003 61.735 70.5156 61.5527C70.431 61.3639 70.3659 61.1947 70.3203 61.0449C70.2617 60.8757 70.2227 60.7129 70.2031 60.5566C70.5156 60.4004 70.8509 60.2637 71.209 60.1465C71.5215 60.0423 71.8796 59.9479 72.2832 59.8633C72.6934 59.7786 73.123 59.7363 73.5723 59.7363C74.3145 59.7363 74.9297 59.8014 75.418 59.9316C75.9062 60.0618 76.2936 60.2604 76.5801 60.5273C76.873 60.7878 77.0749 61.1198 77.1855 61.5234C77.3027 61.9206 77.3613 62.3926 77.3613 62.9395V68.3887L78.1816 69.3848V70H76.375L75.623 69.1309H75.2715C75.2389 69.1634 75.151 69.2383 75.0078 69.3555C74.8711 69.4661 74.6921 69.5866 74.4707 69.7168C74.2559 69.8405 74.0085 69.9512 73.7285 70.0488C73.4551 70.1465 73.1621 70.1953 72.8496 70.1953C72.3613 70.1953 71.9186 70.1237 71.5215 69.9805C71.1243 69.8307 70.7826 69.6224 70.4961 69.3555C70.2161 69.082 69.998 68.7598 69.8418 68.3887C69.6921 68.0111 69.6172 67.5977 69.6172 67.1484ZM71.7461 66.9727C71.7461 67.2721 71.7884 67.5228 71.873 67.7246C71.9577 67.9199 72.0749 68.0762 72.2246 68.1934C72.3809 68.3105 72.5664 68.3919 72.7812 68.4375C73.0026 68.4831 73.2467 68.5059 73.5137 68.5059C73.7611 68.5059 73.9922 68.4766 74.207 68.418C74.4284 68.3529 74.6204 68.2812 74.7832 68.2031C74.972 68.1185 75.1478 68.0176 75.3105 67.9004V65.2734L73.3477 65.4004C73.0417 65.4199 72.7845 65.472 72.5762 65.5566C72.3743 65.6413 72.2116 65.752 72.0879 65.8887C71.9642 66.0254 71.8763 66.1882 71.8242 66.377C71.7721 66.5592 71.7461 66.7578 71.7461 66.9727Z"
+                  fill="#0152A8" fill-opacity="0.85" />
+                <defs>
+                  <linearGradient id="paint0_linear_360_1118" x1="45.6274" y1="0.385" x2="45.6274" y2="35.455"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00F3FF" />
+                    <stop offset="0.238" stop-color="#00EFFC" />
+                    <stop offset="0.44" stop-color="#00E5F4" />
+                    <stop offset="0.629" stop-color="#00D3E7" />
+                    <stop offset="0.81" stop-color="#00BAD4" />
+                    <stop offset="0.983" stop-color="#009BBC" />
+                    <stop offset="1" stop-color="#0098BA" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_360_1118" x1="34.7806" y1="0.385" x2="34.7806" y2="35.455"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00F3FF" />
+                    <stop offset="0.238" stop-color="#00EFFC" />
+                    <stop offset="0.44" stop-color="#00E5F4" />
+                    <stop offset="0.629" stop-color="#00D3E7" />
+                    <stop offset="0.81" stop-color="#00BAD4" />
+                    <stop offset="0.983" stop-color="#009BBC" />
+                    <stop offset="1" stop-color="#0098BA" />
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_360_1118" x1="19.5271" y1="35.4252" x2="34.7209" y2="27.6859"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3E6896" />
+                    <stop offset="0.247" stop-color="#355881" />
+                    <stop offset="0.75" stop-color="#1F324E" />
+                    <stop offset="1" stop-color="#131D32" />
+                  </linearGradient>
+                </defs>
+              </svg></h3>
+              <p>
+                <!-- A108 Adam Street <br>
+                New York, NY 535022<br>
+                United States <br><br> -->
+                <strong>Phone:</strong> +79489283<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Health Care</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home Delivery</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Doctor Consultancy</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Regime Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AlDAWA</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+  
+  
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
